@@ -29,9 +29,45 @@ $('document').ready(function () {
       // return response;
     });
 
+  // console.log(deck);
+
+  // var array_name = [
+  //   ["sound/a_1.mp3", "img/v1.png"],
+  //   ["sound/aa_2.mp3", "img/v2.png"],
+  //   ["sound/i_3.mp3", "img/v3.png"],
+  //   ["sound/ii_4.mp3", "img/v4.png"],
+  //   ["sound/u_5.mp3", "img/v5.png"],
+  //   ["sound/uu_6.mp3", "img/v6.png"],
+  //   ["sound/ru_7.mp3", "img/v7.png"],
+  //   ["sound/e_8.mp3", "img/v9.png"],
+  //   ["sound/ee_9.mp3", "img/v10.png"],
+  //   ["sound/ai_10.mp3", "img/v11.png"],
+  //   ["sound/o_11.mp3", "img/v12.png"],
+  //   ["sound/oo_12.mp3", "img/v13.png"],
+  //   ["sound/au_13.mp3", "img/v14.png"],
+  //   ["sound/am_14.mp3", "img/v15.png"],
+  //   ["sound/ah_15.mp3", "img/v16.png"]
+  // ];
 
   function Init(response) {
 
+    // for (var i = 0; i < array_name.length; i++) {
+
+    //   var card1 = {
+    //     card: i + 1,
+    //     picture: array_name[i][1],
+    //     sound: array_name[i][0],
+    //     num: 0,
+    //     active: true
+    //   };
+
+    //   deck.push(card1);
+
+    // }
+
+    // deck = eel.get_words();
+    // deck = response;
+    // console.log(response)
     decklocal = JSON.parse(response);
 
 
@@ -70,7 +106,6 @@ $('document').ready(function () {
     $("#msg").text("Good Job !!");
     $("#fc").hide();
     // startConfetti();
-    confetti.start();
   };
 
 
@@ -94,7 +129,6 @@ $('document').ready(function () {
       if (currcard !== null) {
         console.log(currcard);
         $("#" + currcard.card).appendTo("#pic_add");
-        playAudio(currcard.sound);
       }
 
       $("#msg").text(deck.length +1 +" Cards left");
@@ -147,7 +181,7 @@ $('document').ready(function () {
 
   //$(".flip-card-back").parent().bind( 'transitionend', playAudio, true);
 
-  // $('#no').hover(function () { playAudio(currcard.sound); },function(){} );
+  $('#no').hover(function () { playAudio(currcard.sound); },function(){} );
   $('#play').click(function () { playAudio(currcard.sound); });
 
   function playAudio(file) {

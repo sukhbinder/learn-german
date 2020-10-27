@@ -1,8 +1,8 @@
 id,question,answer,due_date,num,active
 0,BYE,asset/bye.mp3,2020-10-27 20:51:44.417896,0,True
 1,Execuse me,asset/execuse_me.mp3,2020-10-27 20:51:44.418211,0,True
-2,Friday,asset/friday.mp3,2020-10-27 20:41:38.195780,0,False
-3,Good Bye,asset/good_bye.mp3,2020-10-27 20:41:38.195780,0,False
+2,Friday,asset/friday.mp3,2020-10-27 21:00:59.473380,0,True
+3,Good Bye,asset/good_bye.mp3,2020-10-27 21:00:59.473393,0,True
 4,Hello,asset/hello.mp3,2020-10-27 20:41:38.195780,0,False
 5,Hi,asset/hi.mp3,2020-10-27 20:41:38.195780,0,False
 6,How are you,asset/how_r_u.mp3,2020-10-27 20:41:38.195780,0,False
