@@ -1,0 +1,16 @@
+BYE,asset/bye.mp3
+Execuse me,asset/execuse_me.mp3
+Friday,asset/friday.mp3
+Good Bye,asset/good_bye.mp3
+Hello,asset/hello.mp3
+Hi,asset/hi.mp3
+How are you,asset/how_r_u.mp3
+Monday,asset/monday.mp3
+Saturday,asset/saturday.mp3
+See you soon,asset/see_u_soon.mp3
+Sunday,asset/sunday.mp3
+Thank you very much,asset/thank_u_very_much.mp3
+Thursday,asset/thursday.mp3
+Tuesday,asset/tuesday.mp3
+Wednesday,asset/wednesday.mp3
+What time is it?,asset/what_time_is_it.mp3
