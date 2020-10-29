@@ -12,6 +12,7 @@ def selectwords(data):
     rdata = []
     for d in data:
         rdata.append([d.question, d.answer, d.num, d.active])
+    np.random.shuffle(rdata)
     return rdata
 
 @eel.expose

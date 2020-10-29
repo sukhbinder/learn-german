@@ -84,45 +84,56 @@
     }
 
     #emitter {
-  visibility: hidden;
-  background-color: #222;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  top: 40%;
-  left: 0%;
-}
+      visibility: hidden;
+      background-color: #222;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      top: 40%;
+      left: 0%;
+    }
 
-#empty {
-  position: relative;
-  width: 300px;
-  height: 500px;
-  border-radius: 50%;
-  top: 40%;
-  left: 0%;
-}
+    #empty {
+      position: relative;
+      width: 300px;
+      height: 500px;
+      border-radius: 50%;
+      top: 40%;
+      left: 0%;
+    }
 
-.dot-container {
-  position:absolute;
-  left:0;
-  top:0;
-  overflow:visible;
-  z-index:5000;
-  pointer-events:none;
-}
-.dot {
-  position: absolute;
-  pointer-events: none; /*performance optimization*/
-}
+    .dot-container {
+      position: absolute;
+      left: 0;
+      top: 0;
+      overflow: visible;
+      z-index: 5000;
+      pointer-events: none;
+    }
 
+    .dot {
+      position: absolute;
+      pointer-events: none;
+      /*performance optimization*/
+    }
+
+    #question{
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 40px;
+    }
   </style>
 
   <script charset="utf-8" src="jquery-3.5.1.min.js"></script>
   <script type='text/javascript' src='/eel.js'></script>
   <script src="confetti.min.js"></script>
   <script charset="utf-8" src="script.js"></script>
-  
+
 
   <title>Learning</title>
 </head>
@@ -135,6 +146,7 @@
 
     <div class="flip-card-inner">
       <div class="flip-card-front" id="pic_add">
+        <h1 id="question"></h1>
         <!-- <img id="question" src="v1.png" style="width:300px;height:300px;"> -->
       </div>
       <div class="flip-card-back">
@@ -144,9 +156,9 @@
           <button class="button button1" id="yes">Yes</button>
           <button class="button button2" id="no">No</button>
           <br>
-          <p>
-            <button class="button button3" id="play">Play</button>
-          </p>
+        <p>
+          <button class="button button3" id="play">Play</button>
+        </p>
         </p>
 
       </div>
@@ -156,7 +168,7 @@
   <h5 id="msg">Hover over to check if you got it correct!</h5>
   <div id="emitter"></div>
   <div id="empty">
-    
+
   </div>
   <div id="store">
 
